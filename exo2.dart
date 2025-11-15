@@ -6,3 +6,6 @@ class Point{
    _x = _x + dx;
    _y = _y + dy;
   }
+  void display(){
+    print("$_x,$_y");
+  }}
