@@ -30,4 +30,17 @@ void main() {
   livre1.afficherInfos();
   livre2.afficherInfos();
   livre3.afficherInfos();
+
+
+
+  var novel1 = Roman("Layali Baghdad", "Ahlam Mosteghanemi", "Drama");
+  var novel2 = Roman("Zill Al-Hakim", "Ibrahim Al-Feki", "Historical");
+  var novel3 = Roman("Madinat Al-Rimal", "Nizar Qabbani", "Thriller");
+  novel1.afficherInfos();
+  novel2.afficherInfos();
+  novel3.afficherInfos();
+
+  
+  Livre.afficherTotalLivres();
 }
+
