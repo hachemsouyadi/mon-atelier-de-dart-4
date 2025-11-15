@@ -10,5 +10,9 @@ class Compte{
     } else {
       print("il faut un monton  positif.");
     }}
-    
+    void main(){
+    var compte1 = Compte("123");
+    compte1.depot(40);
+    print("Solde: ${compte1.solde}");
+  }
   }
