@@ -19,3 +19,12 @@ abstract class Forme{
   double calculerAire(){
     return largeur*hauteur;
   }}
+  void main() {
+  List<Forme> formes=[];
+
+  formes.add(Cercle(5));
+  formes.add(Rectangle(4, 3));
+  for (var f in formes){
+    f.afficherMessage();
+    print(f.calculerAire());  
+  }}
