@@ -22,6 +22,14 @@ class Film extends Media {
     print("ca est un Film : $titre (${dureeMinutes} min)"); 
   }
 }
+void main(){ 
+  List<Media>catalogue=[];
+  catalogue.add(Livre("la miroire ", "ahmed amouri")); 
+  catalogue.add(Film("saw",250)); 
+  for(var media in catalogue){ 
+    media.afficherType();
+  }
+}
 
 
   
