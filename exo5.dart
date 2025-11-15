@@ -11,3 +11,11 @@ abstract class Forme{
   double calculerAire(){
     return 3.14*rayon*rayon;
   }}
+  class Rectangle extends Forme{
+  final double largeur;
+  final double hauteur;
+  Rectangle(this.largeur,this.hauteur);
+    @override
+  double calculerAire(){
+    return largeur*hauteur;
+  }}
