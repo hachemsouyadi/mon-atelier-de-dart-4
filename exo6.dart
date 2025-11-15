@@ -1,4 +1,4 @@
-class Connectable{
+abstract class Connectable{
 void connecter(String utilisateur);
   void deconnecter();
 }
@@ -22,5 +22,14 @@ class BaseDeDonnees implements Connectable{
   @override
   void deconnecter() {
     print("BaseDeDonnees : deconnexion reussie."); 
+  }
+}
+void main(){
+var serveur=ServeurAPI(); 
+  var base=BaseDeDonnees();
+List<Connectable> services=[serveur, base];
+for (var s in services){ 
+    s.connecter("Hachem");
+    s.deconnecter();
   }
 }
