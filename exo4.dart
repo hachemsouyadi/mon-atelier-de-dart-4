@@ -6,3 +6,6 @@ class Media {
   }
   
 }
+class Livre extends Media{
+   final String auteur;
+  Livre(String titre,this.auteur):super(titre); }
