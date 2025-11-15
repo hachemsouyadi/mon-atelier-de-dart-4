@@ -5,5 +5,10 @@ class Compte{
   String get solde=>"${_solde.toStringAsFixed(2)}\$";
   void depot(double montant){
     if (montant>0){
-    _solde+=montant;}}
+    _solde+=montant;
+     print("Depot de:$montant\$effectue.");
+    } else {
+      print("il faut un monton  positif.");
+    }}
+    
   }
